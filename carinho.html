@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Carrinho | Gadgets Tech</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/products.js" defer></script>
+    <script src="js/cart.js" defer></script>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <a class="logo" href="index.html">
+            ⬡ Gadgets <span>Tech</span>
+        </a>
+
+        <nav class="menu" aria-label="Menu principal">
+            <a href="index.html">Início</a>
+            <a href="index.html#produtos">Produtos</a>
+            <a href="index.html#sobre">Sobre</a>
+        </nav>
+
+        <a class="carrinho-link" href="carrinho.html">
+            🛒 Carrinho
+            <span id="contador">0</span>
+        </a>
+    </header>
+
+    <main class="container pagina-carrinho">
+
+        <section>
+            <h1>Meu carrinho 🛒</h1>
+            <p>Confira seus produtos antes de confirmar o pedido.</p>
+
+            <div class="carrinho-box">
+
+                <div id="itens"></div>
+
+                <div id="carrinho-vazio" class="vazio" hidden>
+                    <h2>Seu carrinho está vazio</h2>
+                    <p>Adicione produtos para continuar.</p>
+
+                    <a href="index.html#produtos" class="botao">
+                        Ver produtos
+                    </a>
+                </div>
+
+                <section id="resumo" class="resumo" hidden>
+                    <p>
+                        Subtotal:
+                        <strong id="subtotal">R$ 0,00</strong>
+                    </p>
+
+                    <p>
+                        Entrega:
+                        <strong>Grátis</strong>
+                    </p>
+
+                    <p class="total">
+                        Total:
+                        <strong id="total">R$ 0,00</strong>
+                    </p>
+
+                    <button id="confirmar-pedido" class="botao">
+                        Confirmar pedido
+                    </button>
+
+                    <p id="mensagem" role="status" aria-live="polite"></p>
+                </section>
+
+            </div>
+
+            <p class="voltar-compras">
+                <a href="index.html#produtos" class="botao">
+                    ← Continuar comprando
+                </a>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Gadgets Tech — Tecnologia que facilita o seu dia.</p>
+    </footer>
+
+</body>
+</html>

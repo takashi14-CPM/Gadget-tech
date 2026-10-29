@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça os gadgets futuristas da Gadgets Tech.">
+    <title>Gadgets Tech | Tecnologia do Futuro</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/produtos.css">
+
+    <script src="js/products.js" defer></script>
+    <script src="js/cart.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="index.html" class="logo">⬡ Gadgets <strong>Tech</strong></a>
+
+        <nav aria-label="Menu principal">
+            <a href="index.html">Início</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#sobre">Sobre</a>
+        </nav>
+
+        <div class="acoes">
+            <input type="search" id="busca"
+                   placeholder="Buscar produtos..."
+                   aria-label="Buscar produtos">
+            <a href="carrinho.html" class="link-carrinho">
+                🛒 Carrinho <span id="contador-carrinho">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="banner">
+            <div class="banner-texto">
+                <span class="etiqueta">TECNOLOGIA E INOVAÇÃO</span>
+                <h1>O futuro está <br><strong>ao seu alcance</strong></h1>
+                <p>Gadgets inteligentes que conectam você a um mundo de novas possibilidades.</p>
+                <a href="#produtos" class="botao-principal">Explorar produtos →</a>
+            </div>
+            <div class="banner-icone" aria-hidden="true">✦</div>
+        </section>
+
+        <section id="produtos" class="secao-produtos">
+            <aside class="filtros">
+                <h2>Categorias</h2>
+                <button class="filtro ativo" data-categoria="Todas">Todas</button>
+                <button class="filtro" data-categoria="Wearables">Wearables</button>
+                <button class="filtro" data-categoria="Casa Inteligente">Casa Inteligente</button>
+                <button class="filtro" data-categoria="Áudio Avançado">Áudio Avançado</button>
+
+                <label for="ordenacao">Ordenar por</label>
+                <select id="ordenacao">
+                    <option value="padrao">Padrão</option>
+                    <option value="menor">Menor preço</option>
+                    <option value="maior">Maior preço</option>
+                    <option value="nome">Nome (A–Z)</option>
+                </select>
+            </aside>
+
+            <div class="catalogo">
+                <div class="titulo-catalogo">
+                    <div>
+                        <h2>Produtos em Destaque</h2>
+                        <p>Descubra a próxima geração de tecnologia.</p>
+                    </div>
+                    <span id="quantidade-produtos">6 produtos</span>
+                </div>
+
+                <div id="lista-produtos" class="grade-produtos"></div>
+                <p id="mensagem-vazia" class="mensagem-vazia" hidden>
+                    Nenhum produto encontrado. Tente outra busca.
+                </p>
+            </div>
+        </section>
+
+        <section id="sobre" class="beneficios">
+            <div>🔒 <strong>Compra segura</strong><br>Seus dados protegidos</div>
+            <div>🚚 <strong>Entrega nacional</strong><br>Para todo o Brasil</div>
+            <div>🎧 <strong>Suporte especializado</strong><br>Estamos aqui para ajudar</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Gadgets Tech — Tecnologia que facilita o seu dia.</p>
+    </footer>
+</body>
+</html>
